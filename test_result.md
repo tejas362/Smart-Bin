@@ -234,3 +234,5 @@ test_plan:
 agent_communication:
   - agent: "main"
     message: "Created comprehensive Smart Dustbin IoT system with backend API supporting dustbin CRUD, IoT simulation, notifications, and dashboard stats. Frontend includes real-time dashboard, OpenStreetMap integration, and notification system. Ready for testing backend functionality first."
+  - agent: "testing"
+    message: "✅ BACKEND TESTING COMPLETE: All 4 high-priority backend tasks are working perfectly. Created comprehensive test suite (/app/backend_test.py) and verified: (1) IoT Dustbin API with full CRUD operations - all endpoints working with proper data structures, (2) IoT Data Simulation System - realistic sensor updates for all 12 bins, (3) Notification System - automatic alerts for full bins (>90%) and low battery (<20%), (4) Demo Data Initialization - 12 dustbins across NYC, SF, LA, Chicago with realistic coordinates. All API responses include proper data structures, MongoDB operations work correctly, and notifications are automatically generated. Backend is production-ready for frontend integration."
