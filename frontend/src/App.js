@@ -34,6 +34,12 @@ const MapView = ({ dustbins, onBinSelect }) => {
   const initializeMap = () => {
     if (!window.L) return;
 
+    // Check if map is already initialized
+    const mapElement = document.getElementById('map');
+    if (mapElement && mapElement._leaflet_id) {
+      return; // Map already initialized
+    }
+
     const newMap = window.L.map('map').setView([40.7829, -73.9654], 10);
     
     window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
